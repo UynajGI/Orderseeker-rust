@@ -1,0 +1,15 @@
+[package]
+name    = "xy_mc"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "xy_mc"
+path = "src/main.rs"
+
+[dependencies]
+rand       = { version = "0.8", features = ["small_rng"] }
+rand_distr = "0.4"
+
+[profile.release]
+opt-level = 3
